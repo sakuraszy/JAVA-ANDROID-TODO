@@ -12,6 +12,7 @@ public class EditItem extends AppCompatActivity {
 
     EditText etItem;
     Button btnSave;
+    Button btnCom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,26 @@ public class EditItem extends AppCompatActivity {
 
         etItem = findViewById(R.id.etItem);
         btnSave = findViewById(R.id.btnSave);
+        btnCom = findViewById(R.id.btnCom);
 
         getSupportActionBar().setTitle("Edit Item");
+
+
+        btnCom.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent();
+
+                String completed = etItem.getText()+" - Completed";
+                intent1.putExtra(MainActivity.Key_text,completed);
+                intent1.putExtra(MainActivity.Key_position,getIntent().getExtras().getInt(MainActivity.Key_position));
+
+                setResult(RESULT_OK,intent1);
+
+                finish();
+            }
+        });
 
 
         etItem.setText(getIntent().getStringExtra(MainActivity.Key_text));
