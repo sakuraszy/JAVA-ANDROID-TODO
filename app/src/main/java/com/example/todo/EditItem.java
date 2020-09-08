@@ -31,8 +31,13 @@ public class EditItem extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent();
-
-                String completed = etItem.getText()+" - Completed";
+                String completed;
+                if (String.valueOf(etItem.getText()).substring(0, 12).equals("Completed - ")) {
+                     completed = String.valueOf(etItem.getText());
+                }
+                else{
+                    completed = "Completed - " + etItem.getText();
+                }
                 intent1.putExtra(MainActivity.Key_text,completed);
                 intent1.putExtra(MainActivity.Key_position,getIntent().getExtras().getInt(MainActivity.Key_position));
 
