@@ -14,4 +14,4 @@ The following
 * [ ] Your app includes a improved UI (icons, styling, colors, etc.)
 
 
-Here's a walkthrough of implemented user stories:<img src='http://link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />GIF created with [LiceCap](http://www.cockos.com/licecap/).
+Here's a walkthrough of implemented user stories:<img src='https://github.com/sakuraszy/JAVA-ANDROID-TODO/blob/master/workshrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />GIF created with [LiceCap](http://www.cockos.com/licecap/).
