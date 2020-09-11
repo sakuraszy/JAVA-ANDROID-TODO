@@ -1,6 +1,6 @@
 # Project 1 - *TODO Application*
 **My todo list app** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item
-Submitted by: **Gloria Shen 60199009**
+Submitted by: **Gloria Shen**
 ## User StoriesThe following
 **must have** functionality is completed:
 * [X] User can **view a list of todo items**
